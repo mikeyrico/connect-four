@@ -1,0 +1,33 @@
+span.col {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  /*background-color: green;*/
+  display: inline-block;
+  margin: 5px;
+}
+
+div.row {
+
+}
+
+.header {
+  display: inline-block;
+  height: 40px;
+  width: 60px;
+  background-color: gray;
+}
+
+
+
+[data-player='one'] {
+  background-color: red;
+}
+
+[data-player='two'] {
+  background-color: black;
+}
+
+[data-player='none'] {
+  background-color: green;
+}
