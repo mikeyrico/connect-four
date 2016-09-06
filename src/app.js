@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Board from './components/Board'
 import Header from './components/Header'
-import { createBoard, turn } from './util/helpers'
+import { createBoard, turn, checkBoardForWinner } from './util/helpers'
 
 const App = React.createClass({
   getInitialState() {
@@ -21,6 +21,7 @@ const App = React.createClass({
       player1: !this.state.player1,
       player2: !this.state.player2
     });
+    checkBoardForWinner(board);
   },
   render () {
     return (

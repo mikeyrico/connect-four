@@ -9,7 +9,6 @@ const Row = React.createClass({
       2: 'two'
     };
     let horizontal = row.map((col, i) => {
-    console.log('inside row', playerMap[col]);
       return (
         <span
           className='col'
